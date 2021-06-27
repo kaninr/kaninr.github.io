@@ -1,78 +1,194 @@
 @import url(//fonts.googleapis.com/css2?family=Roboto);
 
+*,
 body {
-  margin: 0;
-  background-color: black;
-  font-family: "Roboto";
-  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-.typography--headline1 {
+body {
+  background-color: #000;
+  transition: background-color 1s ease;
+}
+
+img {
+  width: auto; /* set to anything and aspect ratio is maintained - also corrects glitch in Internet Explorer */
+  height: 560px; /* set to anything and aspect ratio is maintained */
+  max-width: 100%;
+  border: 0; /* for older IE browsers that draw borders around images */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  padding: 0px 0px;
+}
+
+p {
+  color: #fff;
+  padding: 4px 0px;
+}
+
+.typography-headline1 {
   font-family: "Roboto";
   font-size: 96px;
   font-weight: 700;
 }
 
-.typography--headline2 {
+.typography-headline2 {
   font-family: "Roboto";
   font-size: 60px;
   font-weight: 700;
 }
 
-.typography--headline3 {
+.typography-headline3 {
   font-family: "Roboto";
   font-size: 48px;
   font-weight: 700;
 }
 
-.typography--headline4 {
+.typography-headline4 {
   font-family: "Roboto";
   font-size: 34px;
   font-weight: 700;
 }
 
-.typography--headline5 {
+.typography-headline5 {
   font-family: "Roboto";
   font-size: 24px;
   font-weight: 700;
 }
 
-.typography--headline6 {
+.typography-headline6 {
   font-family: "Roboto";
   font-size: 20px;
   font-weight: 700;
+  padding: 4px 0px;
 }
-.typography--subtitle1 {
+.typography-subtitle1 {
   font-family: "Roboto";
   font-size: 24px;
   font-weight: 700;
 }
-.typography--subtitle2 {
+.typography-subtitle2 {
   font-family: "Roboto";
   font-size: 20px;
   font-weight: 700;
+  padding: 4px 0px;
 }
-.typography--body1 {
+.typography-body1 {
   font-family: "Roboto";
   font-size: 24px;
 }
-.typography--body2 {
+.typography-body2 {
   font-family: "Roboto";
   font-size: 20px;
 }
 
+.text-dark-primary {
+  color: #ffffff;
+}
+
+.text-dark-secondary {
+  color: #ffffff54;
+}
+
+.text-dark-tertiary {
+  color: #ffffff38;
+}
+
+.text-light-primary {
+  color: #000000;
+}
+
+.text-light-secondary {
+  color: #00000054;
+}
+
+.text-light-tertiary {
+  color: #00000012;
+}
+
+/* The navigation bar */
 .main-nav {
-    overflow: hidden;
-    margin-top: 0px;
-    margin-left: 16px;
-    margin-right: 16px;
+  overflow: hidden;
+  position: sticky;
+  padding: 0px 24px;
+  top: 0;
+  width: 100%;
 }
 
+/* Links inside the navbar */
 .main-nav a {
   float: left;
-  color: white;
-  text-align: center;
+  display: block;
+  color: #ffffff;
   padding: 24px 0px;
+  text-align: left;
+  left: 16px;
   text-decoration: none;
-  font-size: 24px;
+}
+
+/* Main content */
+.main {
+  padding: 16px;
+  margin-top: 48px; /* Add a top margin to avoid content overlay */
+}
+
+.container {
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 48px;
+  margin-right: 48px;
+  text-align: left;
+  color: white;
+}
+
+.container-title {
+  position: relative;
+  margin-top: 96px;
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.container-align-left {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translate(0%, -50%);
+}
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 560px;
+}
+
+/* colours */
+.color-violet {
+  background-color: #7a4eab;
+}
+.color-indigo {
+  background-color: #4332cf;
+}
+.color-blue {
+  background-color: #2f8fed;
+}
+.color-green {
+  background-color: #4dcf42;
+}
+.color-yellow {
+  background-color: #faeb33;
+}
+.color-orange {
+  background-color: #f19031;
+}
+.color-red {
+  background-color: #f2293a;
 }
