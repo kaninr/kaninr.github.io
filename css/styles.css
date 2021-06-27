@@ -116,9 +116,9 @@ p {
 
 /* The navigation bar */
 .main-nav {
-  overflow: hidden;
+  position: fixed;
   position: sticky;
-  padding: 0px 24px;
+  position: -webkit-sticky;
   top: 0;
   width: 100%;
 }
@@ -128,15 +128,14 @@ p {
   float: left;
   display: block;
   color: #ffffff;
-  padding: 24px 0px;
+  padding: 24px 96px;
   text-align: left;
-  left: 16px;
   text-decoration: none;
 }
 
 /* Main content */
 .main {
-  padding: 16px;
+  padding: 48px;
   margin-top: 48px; /* Add a top margin to avoid content overlay */
 }
 
@@ -153,6 +152,7 @@ p {
 .container-title {
   position: relative;
   margin-top: 96px;
+  left: 48px;
   margin-bottom: 48px;
   text-align: left;
 }
@@ -160,7 +160,7 @@ p {
 .container-align-left {
   position: absolute;
   top: 50%;
-  left: 24px;
+  left: 48px;
   transform: translate(0%, -50%);
 }
 
