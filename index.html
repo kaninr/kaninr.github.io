@@ -9,7 +9,10 @@
     <meta name="keywords" content="kanin, kanin buapheng, portfolio">
     <meta name="author" content="Kanin Buapheng">
     <title>Kanin Buapheng Design Portfolio</title>
-    <link href="./css/styles.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+
 </head>
 
 <body>
@@ -19,22 +22,26 @@
 
     <div class="main">
         <div class="panel" data-color="black">
-            <div class="container">
+            <div class="container" style="padding-top: 200px;">
                 <div class="container-title-default">
-                    <h3 class="typography-headline3 color-dark-primary">
-                        Dynamic and creative experience designer. Inspirational motivated with strength in demonstrated
+                    <h2 class="typography-headline2 color-dark-primary">
+                        Dynamic and creative experience designer. Inspirational motivated with strength in
+                        demonstrated
                         captivating interactive and presentation design.
-                    </h3>
+                    </h2>
                 </div>
             </div>
         </div>
 
         <div class="panel" data-color="violet">
             <div class="container">
-                <img id="myImg" src="img/cover-aisnow.png" alt="AIS Now">
+                <img class="simple-ajax-popup-align-top" href="/site-assets/ajax/test-ajax.html" id="myImg"
+                    src="img/cover-aisnow.png" alt="AIS Now">
                 <div class="container-title-left">
-                    <p class="typography-headline3 color-light-primary">Now</p>
-                    <p class="typography-headline4 color-light-secondary">Redesigning My AIS for mobile</p>
+                    <a class="simple-ajax-popup-align-top" href="/site-assets/ajax/test-ajax.html">
+                        <p class="typography-headline3 color-light-primary">Now</p>
+                        <p class="typography-headline4 color-light-secondary">Redesigning My AIS for mobile</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -67,7 +74,8 @@
                 <img src="img/cover-space.png" alt="AIS Space">
                 <div class="container-title-left">
                     <p class="typography-headline3 color-light-primary">Space</p>
-                    <p class="typography-headline4 color-light-secondary">Setting a new experience in dynamic background
+                    <p class="typography-headline4 color-light-secondary">Setting a new experience in dynamic
+                        background
                         ambient</p>
                 </div>
             </div>
@@ -77,7 +85,8 @@
                 <img src="img/cover-aisfarmsuk.png" alt="AIS Farmsuk">
                 <div class="container-title-left">
                     <p class="typography-headline3 color-light-primary">AIS Farmsuk</p>
-                    <p class="typography-headline4 color-light-secondary">New opportunity to introduce modern technology
+                    <p class="typography-headline4 color-light-secondary">New opportunity to introduce modern
+                        technology
                         to
                         improve the productivity of Thai farming</p>
                 </div>
@@ -88,7 +97,8 @@
                 <img src="img/cover-aispobmor.png" alt="AIS Pob Mor">
                 <div class="container-title-left">
                     <p class="typography-headline3 color-light-primary">AIS Pob Mor</p>
-                    <p class="typography-headline4 color-light-secondary">Healthcare communication platform. Connects
+                    <p class="typography-headline4 color-light-secondary">Healthcare communication platform.
+                        Connects
                         you
                         with board-certified doctor. within minutes</p>
                 </div>
@@ -105,10 +115,10 @@
                     </h6>
 
                     <a href="
-                        mailto:kanincc@gmail.com?Subject=Hello!">
-                        <h3 class="typography-headline2 color-primary-default" style="margin: 48px 0px;">
+                            mailto:kanincc@gmail.com?Subject=Hello!">
+                        <h2 class="typography-headline2 color-primary-default" style="margin: 48px 0px;">
                             kanincc@gmail.com
-                        </h3>
+                        </h2>
                     </a>
 
                     <div style="padding: 24px 0px">
@@ -139,28 +149,30 @@
         </div>
     </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div>
+        <h3>Ajax popup</h3>
+        <p>You have full control of what is displayed in popup, align it to any side via CSS, enable or disable
+            scroll on right side of window - whatever.</p>
+        <div>
 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Modal Header</h2>
-                <span class="close">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p>Some text in the Modal Body</p>
-                <p>Some other text...</p>
-            </div>
+            <a class="simple-ajax-popup-align-top" href="/site-assets/ajax/test-ajax.html">Open popup</a>
+
+            <script>
+
+                $('.test-popup-link').magnificPopup({
+                    type: 'image'
+                    // other options
+
+                });
+            </script>
         </div>
     </div>
 
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    </div>
-
-    <script src=" https://code.jquery.com/jquery-3.2.1.min.js">
-    </script>
-    <script src="./script.js"></script>
+    <script src="/jquery.magnific-popup.js"></script>
+    <script src="/script.js"></script>
 
 </body>
 

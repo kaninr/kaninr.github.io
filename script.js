@@ -28,31 +28,16 @@ $(window).scroll(function () {
 
 }).scroll();
 
-// Get the modal
-var modal = document.getElementById("myModal");
+$(document).ready(function () {
 
-// Get the button that opens the modal
-var img = document.getElementById("myImg");
+  $('.simple-ajax-popup-align-top').magnificPopup({
+    type: 'ajax',
+    alignTop: true,
+    overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+  });
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+  $('.simple-ajax-popup').magnificPopup({
+    type: 'ajax'
+  });
 
-// When the user clicks the button, open the modal 
-img.onclick = function () {
-  modal.style.display = "block";
-  $("body").addClass("modal-open");
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-  $("body").removeClass("modal-open")
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    $("body").removeClass("modal-open")
-  }
-}
+});
