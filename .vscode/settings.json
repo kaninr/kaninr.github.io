@@ -1,4 +1,4 @@
 {
     "editor.formatOnSave": true,
-    "liveServer.settings.CustomBrowser": "safari"
+    "liveServer.settings.CustomBrowser": "firefox"
 }
