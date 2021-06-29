@@ -31,13 +31,40 @@ $(window).scroll(function () {
 $(document).ready(function () {
 
   $('.simple-ajax-popup-align-top').magnificPopup({
+
     type: 'ajax',
-    alignTop: true,
-    overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    // main options
+    tLoading: '',
+
+    ajax: {
+      closeOnBgClick: false,
+      closeOnContentClick: false,
+      midClick: true,
+      alignTop: true,
+      overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    },
+
+    mainClass: 'animated',
+    removalDelay: 350
+
+
   });
 
-  $('.simple-ajax-popup').magnificPopup({
-    type: 'ajax'
+  // Add it after jquery.magnific-popup.js and before first initialization code
+  $.extend(true, $.magnificPopup.defaults, {
+    tClose: 'Close (Esc)', // Alt text on close button
+    tLoading: '', // Text that is displayed during loading. Can contain %curr% and %total% keys
+    gallery: {
+      tPrev: 'Previous (Left arrow key)', // Alt text on left arrow
+      tNext: 'Next (Right arrow key)', // Alt text on right arrow
+      tCounter: '%curr% of %total%' // Markup for "1 of 7" counter
+    },
+    image: {
+      tError: '<a href="%url%">The image</a> could not be loaded.' // Error message when image could not be loaded
+    },
+    ajax: {
+      tError: '<a href="%url%">The content</a> could not be loaded.' // Error message when ajax request failed
+    }
   });
 
 });
