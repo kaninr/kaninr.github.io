@@ -44,7 +44,7 @@ a {
   font-weight: 700;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 940px) {
   .typography-headline2 {
     font-family: "Roboto";
     font-size: 6.5vw;
@@ -59,7 +59,7 @@ a {
   font-weight: 700;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 940px) {
   .typography-headline3 {
     font-family: "Roboto";
     font-size: 28px;
@@ -75,7 +75,7 @@ a {
   font-weight: 400;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 940px) {
   .typography-headline4 {
     font-family: "Roboto";
     font-size: 24px;
@@ -262,6 +262,7 @@ a {
   position: absolute;
   top: 50%;
   left: 48px;
+  padding-right: 50%;
   transform: translate(0%, -50%);
 }
 
@@ -270,6 +271,8 @@ a {
     position: absolute;
     top: 0%;
     left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
     transform: translate(0%, 0%);
   }
 }
@@ -277,34 +280,38 @@ a {
 /* panel styles */
 .panel {
   /* min height incase content is higher than window height */
-  min-height: 200px;
+  min-height: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 /* colors */
-.color-violet {
-  background-color: #7a4eab;
+.color-now {
+  background-color: #78d64b;
 }
-.color-indigo {
+.color-magellan {
   background-color: #4332cf;
 }
-.color-blue {
-  background-color: #2f8fed;
+.color-smartlocker {
+  background-color: #ebe9f5;
 }
-.color-green {
-  background-color: #4dcf42;
+.color-space {
+  background-color: #3055e7;
 }
-.color-yellow {
-  background-color: #faeb33;
+.color-farmsuk {
+  background-color: #698348;
 }
-.color-orange {
-  background-color: #f19031;
-}
-.color-red {
-  background-color: #f2293a;
+.color-pobmor {
+  background-color: #fae2e3;
 }
 .color-black {
   background-color: #000;
+}
+
+.gallery-block {
+  padding: 48px 0px;
+  padding-bottom: 0px;
+  border-radius: 16px 16px 0px 0px;
+  margin-top: 128px;
 }
